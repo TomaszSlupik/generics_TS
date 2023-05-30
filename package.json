@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "name": "generics_ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "TomaszSlupik",
+  "license": "ISC",
+  "description": ""
+}
