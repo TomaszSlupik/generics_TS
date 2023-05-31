@@ -46,6 +46,10 @@ console.log(identyfiyCat<Cat>({nameCat: 'Kajtek'}))
 
 // KOLJENA FUNKCJA 
 
-// function getRandomElement (list: <Type>[]): Type {
+function getRandomElement<Type> (list: Type[]): Type {
+    const randIx = Math.floor(Math.random() * list.length)
+    return list[randIx]
+}
 
-// }
+console.log(getRandomElement<string>(["a", "b", "c"]))
+console.log(getRandomElement<number>([14, 24]))

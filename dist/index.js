@@ -26,5 +26,9 @@ function identyfiyCat(cat) {
 }
 console.log(identyfiyCat({ nameCat: 'Kajtek' }));
 // KOLJENA FUNKCJA 
-// function getRandomElement (list: <Type>[]): Type {
-// }
+function getRandomElement(list) {
+    const randIx = Math.floor(Math.random() * list.length);
+    return list[randIx];
+}
+console.log(getRandomElement(["a", "b", "c"]));
+console.log(getRandomElement([14, 24]));
