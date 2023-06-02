@@ -32,3 +32,17 @@ function getRandomElement(list) {
 }
 console.log(getRandomElement(["a", "b", "c"]));
 console.log(getRandomElement([14, 24]));
+// Pdwójne typy generyczne 
+function merge(object1, object2) {
+    return Object.assign(Object.assign({}, object1), object2);
+}
+const comboObj = merge({ object1: "dog" }, { object2: ["Lablador", "Russell"] });
+console.log(comboObj);
+// 2 przykład
+function marksSubject(one, two) {
+    return Object.assign(Object.assign({}, one), two);
+}
+const maths = marksSubject({ one: 2 }, { two: [4, 4] });
+const polish = marksSubject({ one: 1 }, { two: 6 });
+console.log(maths);
+console.log(polish);
