@@ -46,3 +46,15 @@ const maths = marksSubject({ one: 2 }, { two: [4, 4] });
 const polish = marksSubject({ one: 1 }, { two: 6 });
 console.log(maths);
 console.log(polish);
+function lengthPeople(people) {
+    return people.length;
+}
+console.log(lengthPeople('Tomek'));
+//  type generics - default value
+function emptyArray() {
+    return [];
+}
+const string = emptyArray();
+string.push('Testowy string');
+const defaultString = emptyArray();
+console.log(string);

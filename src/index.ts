@@ -79,5 +79,29 @@ const polish = marksSubject({one: 1}, {two: 6})
 console.log(maths)
 console.log(polish)
 
+// interface + funkcja generyczna 
 
+interface Lengthy {
+    length: number
+}
+
+function lengthPeople <T extends Lengthy> (people: T): number {
+    return people.length 
+}
+
+console.log(lengthPeople('Tomek'))
+
+//  type generics - default value
+
+function emptyArray<T = string>(): T[] {
+    return []
+}
+
+const string = emptyArray<string>()
+string.push('Testowy string')
+
+const defaultString = emptyArray()
+
+
+console.log(string)
 
