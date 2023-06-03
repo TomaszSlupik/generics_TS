@@ -105,3 +105,30 @@ const defaultString = emptyArray()
 
 console.log(string)
 
+// Klasa genryczna 
+interface Song {
+    title: string,
+    artist: string
+}
+
+interface Video {
+    title: string,
+    creator: string
+}
+
+
+class PlayList<T>{
+    public item: T[] = []
+    addItem(el: T) {
+        this.item.push(el)
+    }
+}
+
+const songFirst = new PlayList<Song>()
+songFirst.addItem({title: 'Nowa piosenka', artist: 'Nowy artysta'})
+console.log(songFirst)
+
+
+const videoFirst = new PlayList<Video>()
+videoFirst.addItem({title: 'Nowe Video', creator: 'Nowy twórca'})
+console.log(videoFirst)

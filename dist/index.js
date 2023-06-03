@@ -58,3 +58,17 @@ const string = emptyArray();
 string.push('Testowy string');
 const defaultString = emptyArray();
 console.log(string);
+class PlayList {
+    constructor() {
+        this.item = [];
+    }
+    addItem(el) {
+        this.item.push(el);
+    }
+}
+const songFirst = new PlayList();
+songFirst.addItem({ title: 'Nowa piosenka', artist: 'Nowy artysta' });
+console.log(songFirst);
+const videoFirst = new PlayList();
+videoFirst.addItem({ title: 'Nowe Video', creator: 'Nowy twórca' });
+console.log(videoFirst);
